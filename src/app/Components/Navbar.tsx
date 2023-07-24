@@ -45,12 +45,12 @@ const Navbar = () => {
                 return <a key={idx}>{item.label}</a>
             })}
             {currentTheme === "dark" ? (
-              <button>
+              <button onClick={() => setTheme("light")} className="bg-slate-100 p-2 rounded-xl">
                 <RiSunLine/>
               </button>
             ) : (
-              <button>
-
+              <button onClick={() => setTheme("dark")} className="bg-slate-100 p-2 rounded-xl">
+                <RiSunLine/>
               </button>
             )}
         </div>
