@@ -41,10 +41,12 @@ const Navbar = () => {
               <h2 className="text-2xl font-bold">Emad Islam</h2>
             </div>
             <div className="md:hidden">
-              <button>{navbar ? <IoMdClose size={30}/> : <IoMdMenu size={30} />}</button>
+              <button onClick={()=>setNavbar(!navbar)}>
+                {navbar ? <IoMdClose size={30}/> : <IoMdMenu size={30} />}</button>
             </div>
           </div>
         </div>
+        <div>
         <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${
               navbar ? "block" : "hidden"
             }`}>
@@ -67,6 +69,8 @@ const Navbar = () => {
               <RiMoonFill size={25} />
             </button>
           )}
+        </div>
+      
         </div>
         </div>
         
