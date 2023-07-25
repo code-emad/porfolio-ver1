@@ -69,7 +69,7 @@ const AboutSection = () => {
                 )
               })}
             </div>
-            <Image className=" hidden md:block md:relative md:bottom-4 md:left-10 md:z-0 " alt="" src="/Animated-Emad.png" width={350} height={350}></Image>
+            <Image className=" hidden md:block md:relative md:bottom-4 md:left-10 md:z-0 " alt="" src="/Animated-Emad1.png" width={350} height={350}></Image>
             
           </div>
         </div>
