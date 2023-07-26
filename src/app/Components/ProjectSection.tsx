@@ -36,6 +36,24 @@ const ProjectSection = () => {
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
         </h1>
 
+        <div className='flex flex-col space-y-28'>
+            {projects.map((project, inx) => {
+                return <div key={inx}>
+                    <div className='flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12'>
+                        <div><Image
+                         src={project.image}
+                         alt=""
+                         width={1000}
+                         height={1000}
+                         className="rounded-xl shadow-xl hover:opacity-70"/></div>
+                        <div></div>
+                    </div>
+                </div>
+            })}
+
+
+
+        </div>
     </section>
   )
 }
