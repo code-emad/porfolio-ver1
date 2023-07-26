@@ -44,6 +44,7 @@ const ProjectSection = () => {
             <div key={inx}>
               <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                 <div className="mt-8 md:w-1/2">
+                    <Link href={project.link} target="_blank">
                   <Image
                     src={project.image}
                     alt=""
@@ -51,6 +52,7 @@ const ProjectSection = () => {
                     height={1000}
                     className="rounded-xl shadow-xl hover:opacity-70"
                   />
+                    </Link>
                 </div>
                 <div className="mt-12 md:w-1/2">
                     <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
