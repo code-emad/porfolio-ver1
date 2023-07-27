@@ -4,7 +4,7 @@ import Image from 'next/image'
 import {Link} from 'react-scroll/modules'
 import {HiArrowDown} from 'react-icons/hi'
 
-const HeroSection = () => {
+const HomeSection = () => {
   return (
     <section id="home">
         <div className='flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16 sm:py-32 md:py-48 md:flex-row md:space-x-4 md:text-left'>
@@ -18,8 +18,7 @@ const HeroSection = () => {
             <span className="font-semibold text-teal-600">
               Software Engineer{" "}
             </span>
-            based in Manchester, UK. Working towards creating software that
-            makes life easier and more meaningful.
+            based in Manchester, UK. Working towards creating software that is both useful and meaningful.
                 </p>
                 <Link
             to="projects"
@@ -51,4 +50,4 @@ const HeroSection = () => {
   )
 }
 
-export default HeroSection
+export default HomeSection
