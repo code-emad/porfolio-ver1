@@ -30,22 +30,26 @@ const NAV_ITEMS: Array<NavItem> = [
 const Navbar = () => {
   const { systemTheme, theme, setTheme } = useTheme();
   const currentTheme = theme === "system" ? systemTheme : theme;
-
+  const pathname = usePathname()
   const [navbar, setNavbar] = useState(false);
 
   return (
-        <header className="w-full mx-auto  px-4 sm:px-20 fixed top-0 z-50 shadow bg-white dark:bg-stone-900 dark:border-b dark:border-stone-600">
+        <header className={`w-full mx-auto px-4 sm:px-20 fixed top-0 z-50 shadow ${
+          currentTheme === "dark" ? "bg-stone-900 border-b border-stone-600" : "bg-white"
+        }`}>
       <div className="justify-between md:items-center md:flex">
         <div>
         <div className="flex items-center justify-between py-3 md:py-5 md:block">
           <Link to="home">
-          <div className="md:py-5 md:block">
-              <h2 className="text-2xl font-bold text-stone-900">Emad Islam</h2>
+          <div className="container flex items-center space-x-2">
+              <h2 className="text-2xl font-bold">Emad Islam</h2>
             </div>
           </Link>
             
             <div className="md:hidden">
-              <button onClick={()=>setNavbar(!navbar)}>
+              <button 
+              className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+              onClick={()=>setNavbar(!navbar)}>
                 {navbar ? <IoMdClose size={30}/> : <IoMdMenu size={30} />}</button>
             </div>
           </div>
@@ -61,7 +65,7 @@ const Navbar = () => {
                 key={idx}
                 to={item.page}
                 className={
-                  "block lg:inline-block text-neutral-900  hover:text-neutral-500 dark:text-neutral-100"
+                  "block lg:inline-block text-red hover:text-neutral-500 dark:text-neutral-100"
                 }
                 activeClass="active"
                 spy={true}
