@@ -22,12 +22,12 @@ const projects = [
     link: "https://emads-be-project.onrender.com/api",
   },
   {
-    name: "Project 3",
+    name: "Frontend - House of Games",
     description:
-      "Project 3 Photos is a photos and video digitization service in the LA area.",
-    image: "/familyphotos.png",
-    github: "https://github.com/hqasmei/katorfamilyphotos",
-    link: "https://katorfamilyphotos.com/",
+      "An user interface to allow users to interact with the House of Games API",
+    image: "/FE-House-of-Games.png",
+    github: "https://github.com/code-emad/FE-House-Of-Games",
+    link: "https://emads-first-fe-proj-houseofgames.netlify.app/",
   },
 ];
 
