@@ -16,10 +16,10 @@ const projects = [
   {
     name: "Backend - House of Games",
     description:
-      "Project 2 is a to do list app that built using the PERN stack.",
-    image: "/platoio.png",
-    github: "https://github.com/hqasmei/platoio",
-    link: "https://platoio.com/register",
+      "An API for the purpose of accessing application data programmatically. Created by using Express.js.",
+    image: "/BE-House-of-Games.png",
+    github: "https://github.com/code-emad/BE-House-Of-Games",
+    link: "https://emads-be-project.onrender.com/api",
   },
   {
     name: "Project 3",
