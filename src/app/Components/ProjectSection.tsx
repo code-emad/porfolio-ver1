@@ -24,10 +24,18 @@ const projects = [
   {
     name: "Frontend - House of Games",
     description:
-      "An user interface to allow users to interact with the House of Games API",
+      "An user interface to allow users to interact with the House of Games API.",
     image: "/FE-House-of-Games.png",
     github: "https://github.com/code-emad/FE-House-Of-Games",
     link: "https://emads-first-fe-proj-houseofgames.netlify.app/",
+  },
+  {
+    name: "Mini-App - Tic Tac Toe",
+    description:
+      "A tic tac toe game created using React. Featuring responsive design.",
+    image: "/Tictactoe.png",
+    github: "https://github.com/code-emad/tictactoe",
+    link: "https://emadstictactoegame.netlify.app/",
   },
 ];
 
