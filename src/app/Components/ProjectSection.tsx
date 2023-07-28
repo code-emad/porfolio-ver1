@@ -30,6 +30,14 @@ const projects = [
     link: "https://emads-first-fe-proj-houseofgames.netlify.app/",
   },
   {
+    name: "Mini-App - Random Team Generator",
+    description:
+      "A user interface that allows users to randomly generate two teams of 7. Featuring responsive design.",
+    image: "/Randomteamgenerator.png",
+    github: "https://github.com/code-emad/RandomTeamGenerator",
+    link: "https://emads-random-team-generator.netlify.app/",
+  },
+  {
     name: "Mini-App - Tic Tac Toe",
     description:
       "A tic tac toe game created using React. Featuring responsive design.",
