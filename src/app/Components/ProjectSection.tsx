@@ -62,7 +62,7 @@ const ProjectSection = () => {
                 <SlideUp offset="300px 0px -300px 0px">
               <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                 <div className="mt-8 md:w-1/2">
-                    <Link href={project?.link} target="_blank">
+                    <Link href={project.link} target="_blank">
                   <Image
                     src={project.image}
                     alt=""
@@ -74,7 +74,7 @@ const ProjectSection = () => {
                 </div>
                 <div className="mt-12 md:w-1/2">
                     <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
-                    <p className="text-xl leading-7 mb-4 dark:text-neutral-100 text-neutral-600 ">{project.description}</p>
+                    <p className="text-xl leading-7 mb-4 dark:text-neutral-100 ">{project.description}</p>
                     <div className="flex flex-row allign-bottom space-x-4">
                         <Link href={project.github} target="_blank">
                         <BsGithub
