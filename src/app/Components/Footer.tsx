@@ -1,12 +1,6 @@
 import React from "react";
-import {
-  AiOutlineGithub,
-  AiOutlineTwitter,
-  AiOutlineLinkedin,
-  AiOutlineYoutube,
-  
-} from "react-icons/ai";
-import { FaTiktok } from 'react-icons/fa'
+import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai";
+import { FaTiktok } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -17,25 +11,8 @@ const Footer = () => {
           2023 Emad Islam
         </div>
         <div className="flex flex-row items-center justify-center space-x-2 mb-1">
-          <a href="https://github.com/hqasmei" rel="noreferrer" target="_blank">
-            <AiOutlineGithub
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
-              size={30}
-            />
-          </a>
           <a
-            href="https://twitter.com/hqasmei"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FaTiktok
-              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
-              size={25}
-            />
-          </a>
-
-          <a
-            href="https://www.linkedin.com/in/hosnaqasmei/"
+            href="https://www.linkedin.com/in/emad-i/"
             rel="noreferrer"
             target="_blank"
           >
@@ -45,13 +22,23 @@ const Footer = () => {
             />
           </a>
           <a
-            href="https://www.youtube.com/channel/UCQBMkSDgbxDb8usMeXmOZyA"
+            href="https://github.com/code-emad"
             rel="noreferrer"
             target="_blank"
           >
-            <AiOutlineYoutube
+            <AiOutlineGithub
               className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
               size={30}
+            />
+          </a>
+          <a
+            href="https://www.tiktok.com/@code_emad"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <FaTiktok
+              className="hover:-translate-y-1 transition-transform cursor-pointer text-neutral-500 dark:text-neutral-100"
+              size={25}
             />
           </a>
         </div>
