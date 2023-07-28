@@ -6,15 +6,15 @@ import SlideUp from "./SlideUp";
 
 const projects = [
   {
-    name: "Project 1",
+    name: "Velp - Volunteer Today, Inspire Tomorrow",
     description:
-      "Project 1 is a web app that generates an appreciative sentence of something or someone you are thankful for.",
-    image: "/thankfulthoughts.png",
-    github: "https://github.com/hqasmei/thankful-thoughts",
-    link: "https://thankfulthoughts.io/",
+      "Velp is an android application that connects volunteers with organizations in need.",
+    image: "/Velp.png",
+    github: "https://github.com/code-emad/NC-velp-final-project",
+    link: "https://github.com/code-emad/NC-velp-final-project",
   },
   {
-    name: "Project 2",
+    name: "Backend - House of Games",
     description:
       "Project 2 is a to do list app that built using the PERN stack.",
     image: "/platoio.png",
@@ -46,7 +46,7 @@ const ProjectSection = () => {
                 <SlideUp offset="300px 0px -300px 0px">
               <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                 <div className="mt-8 md:w-1/2">
-                    <Link href={project.link} target="_blank">
+                    <Link href={project?.link} target="_blank">
                   <Image
                     src={project.image}
                     alt=""
