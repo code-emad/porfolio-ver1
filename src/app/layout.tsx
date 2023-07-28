@@ -1,33 +1,15 @@
-"use client";
+import LayoutWithclient from "./layoutwithclient"
 
-import "./globals.css";
-import { Inter } from "next/font/google";
-import type { Metadata } from "next";
-import Navbar from "./Components/Navbar";
-import { ThemeProvider } from "next-themes";
-import Footer from "./Components/Footer";
-
-const inter = Inter({ subsets: ["latin"] });
-
-export const metadata: Metadata = {
-  title: "Emad's portfolio",
-  description: "",
-};
+export const metadata = {
+  title: 'Emad Islam',
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
-        <ThemeProvider enableSystem={true} attribute="class">
-          <Navbar />
-          {children}
-          <Footer />
-        </ThemeProvider>
-      </body>
-    </html>
-  );
+    <LayoutWithclient>{children}</LayoutWithclient>
+  )
 }
