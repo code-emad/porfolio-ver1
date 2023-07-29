@@ -13,7 +13,7 @@ export default function RootLayout({
   return (
     <LayoutWithclient>
       {children}
-      
+      <Analytics/>
     </LayoutWithclient>
   )
 }
