@@ -83,6 +83,20 @@ const Navbar = () => {
                   </Link>
                 );
               })}
+
+              {/*CV Down*/}
+              <a 
+               key="cv"
+               href="/Animated-Emad1.png"
+               className={
+                 "block lg:inline-block text-red hover:text-neutral-500 dark:text-neutral-100"
+               }
+              >
+
+                {"CV"}
+              </a>
+
+
               {currentTheme === "dark" ? (
                 <button
                   onClick={() => {
